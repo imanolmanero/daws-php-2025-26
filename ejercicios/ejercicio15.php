@@ -21,9 +21,9 @@
 // Función que obtiene datos de un usuario
 function getDatos($diccionario, $usuario, $dato) {
     if (isset($diccionario[$usuario][$dato])) {
-        echo $diccionario[$usuario][$dato];
+        return $diccionario[$usuario][$dato];
     } else {
-        echo "Dato no encontrado";
+        return "Dato no encontrado";
     }
 }
 

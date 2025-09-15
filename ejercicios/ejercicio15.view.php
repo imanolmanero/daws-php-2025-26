@@ -6,9 +6,9 @@
 <body>
     <h2>Ejercicio 15</h2>
 
-    <p>Email de jvadillo: <?php getDatos($diccionario, "jvadillo", "email"); ?></p>
-    <p>Nombre de mmartinez: <?php getDatos($diccionario, "mmartinez", "nombre"); ?></p>
-    <p>Apellidos de aperez: <?php getDatos($diccionario, "aperez", "apellidos"); ?></p>
+    <p>Email de jvadillo: <?php echo getDatos($diccionario, "jvadillo", "email"); ?></p>
+    <p>Nombre de mmartinez: <?php echo getDatos($diccionario, "mmartinez", "nombre"); ?></p>
+    <p>Apellidos de aperez: <?php echo getDatos($diccionario, "aperez", "apellidos"); ?></p>
     
 </body>
 </html>
