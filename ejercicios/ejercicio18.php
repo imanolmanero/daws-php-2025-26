@@ -27,4 +27,8 @@ function diaSemana($numero) {
             echo "No es ningún día de la semana.";
     }
 }
+
+    $dia = $_GET["dia"] ?? null;
+
+    require "ejercicio18.view.php";
 ?>
