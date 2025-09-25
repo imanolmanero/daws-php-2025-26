@@ -6,19 +6,9 @@
     <title>Sesiones 05</title>
 </head>
 <body>
-    
-<?php if (isset($_SESSION['usuario'])): ?>
-    <h1>¡Bienvenido, <?= htmlspecialchars($_SESSION['usuario']) ?>!</h1>
-    <a href="login.php?cerrar=1">Cerrar sesión</a>
-<?php else: ?>
-    <h1>Inicia sesión</h1>
-    <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
-    <form method="post">
-        <input type="text" name="usuario" placeholder="Usuario" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Entrar</button>
+    <p>Bienvenid@ <?= $usuarios[$usuario]["nombre"] ?></p>
+    <form action="ejercicio5.php" method="post">
+        <input type="submit" value="Cerrar sesión" name="cerrarSesion">
     </form>
-<?php endif; ?>
-
 </body>
 </html>
