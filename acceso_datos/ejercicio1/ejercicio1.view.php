@@ -14,7 +14,7 @@
         <?php foreach ($productos as $producto): ?>
             <li>
                 <?= $producto['nombre'] ?>
-                <a href="ejercicio1.php=<?= $producto['id'] ?>">(Eliminar)</a>
+                <a href="ejercicio1.php?eliminar=<?= $producto['id'] ?>">(Eliminar)</a>
             </li>
         <?php endforeach ; ?>
     </ul>

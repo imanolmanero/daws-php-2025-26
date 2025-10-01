@@ -5,12 +5,11 @@ $user = "root";
 $pass = "";          
 $dbname = "lista_compra"; 
 
-// Función para conectar a la base de datos usando PDO
+//Conectar a la base de datos 
 function connect($host, $dbname, $user, $pass){
     try{
         # MySQL
         $dbh= new PDO ("mysql:host=$host;dbname=$dbname", $user, $pass);
-        // Activar el modo de errores de PDO (lanza excepciones si algo falla)
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $dbh;
 
