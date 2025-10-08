@@ -1,5 +1,7 @@
 <?php 
 
+namespace Models;
+
 class publicacion {
     //Propiedades
     private string $autores;
@@ -22,8 +24,13 @@ class publicacion {
         return $this->texto;
     }
 
-    
+    public function verTitulo(){
+        return $this->titulo;
+    }
 
+    //Metodo -> escribir
+    public function escribir($string){
+        return $this -> texto. " " .$string;
+    }
 
 }
-
